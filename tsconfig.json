@@ -8,10 +8,10 @@
 
     /* Bundler mode */
     "moduleResolution": "node", // Changed to "node"
-    // "allowImportingTsExtensions": true,
+    "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": false, // Changed to false
+    "noEmit": true, // Changed to false
     "jsx": "react-jsx",
 
     /* Linting */
