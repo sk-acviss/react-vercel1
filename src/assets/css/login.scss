@@ -1,0 +1,136 @@
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  overflow-y: scroll;
+}
+.login-arrow {
+  position: absolute;
+  top: 40px;
+  right: 15px;
+}
+.login-container {
+  @media (max-width: 768px) {
+    .login-image {
+      height: 300px;
+      width: 100vw !important;
+    }
+  }
+  .login-link {
+    cursor: pointer;
+  }
+  flex-wrap: wrap;
+  max-width: 1200px;
+  gap: 70px;
+  background: #fff;
+  padding: 35px;
+  justify-content: space-between;
+  max-height: 600px;
+  .login-image {
+    height: 450px;
+    width: 450px;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .form-wrapper {
+    border-radius: 2px;
+    position: relative;
+    border: 1px solid #ececec;
+    background: #fff;
+    gap: 14px;
+    padding: 50px 26px;
+    box-shadow: 0px 0px 4px 0px rgba(180, 180, 180, 0.5);
+    .heading {
+      color: #1665a0;
+      font-size: 20px;
+      font-weight: 400;
+      letter-spacing: -0.6px;
+
+      span {
+        color: #ffc700;
+      }
+    }
+    p {
+      color: #1665a0;
+    }
+    .login-inbut-group {
+      label {
+        color: #1665a0;
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: -0.45px;
+        margin: 10px 0px;
+      }
+      input {
+        border-radius: 4px;
+        border: 1px solid #1665a0;
+        width: 474px;
+        height: 32px;
+        padding-left: 20px;
+        &::placeholder {
+          color: #c2c2c2;
+
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: normal;
+        }
+      }
+    }
+    .login {
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: -0.48px;
+    }
+    .description {
+      p {
+        font-size: 14px;
+        font-weight: 300;
+      }
+    }
+    .button-wrapper {
+      margin-top: 80px;
+      gap: 80px;
+      button {
+        border-radius: 4px;
+        border: 1px solid #1665a0;
+        background: #fff;
+        color: #1665a0;
+        font-size: 16px;
+        font-weight: 300;
+        padding: 8px 40px;
+        &:hover {
+          box-shadow: 0px 0px 4px 0px #2e2e2e;
+          border: 1px solid #015799;
+          background: #015799;
+          color: #fff;
+        }
+      }
+      p {
+        font-size: 14px;
+        span {
+          color: #0092ff;
+        }
+        padding: 4px;
+        font-weight: 600;
+        border-radius: 2px;
+        border: 1px solid #dbdbdb;
+        letter-spacing: 1px;
+      }
+    }
+  }
+}
+.countdown-text {
+  .disabled {
+    cursor: not-allowed;
+  }
+  button {
+    outline: none;
+    border: none;
+    color: #0092ff;
+    background: #fff;
+  }
+}
